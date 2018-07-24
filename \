@@ -1,0 +1,14 @@
+Move add food text input field a bit UP!
+
+Signed-off-by: rk2810 <rohan.kumquat@gmail.com>
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 4 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   app/src/main/res/layout/activity_main.xml
+#
