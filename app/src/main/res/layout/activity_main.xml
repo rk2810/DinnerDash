@@ -26,15 +26,18 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="584dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/amita"
         android:text="Dinner Dash helps you de1cide what food you should order. Hit the dash button to know your poison for tonight."
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Greeting"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Greeting" />
 
     <ImageView
         android:id="@+id/img_plate"
@@ -98,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/img_plate" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/floatingAddFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
