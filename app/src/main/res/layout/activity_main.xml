@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/Greeting"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/amita"
@@ -21,8 +21,9 @@
         android:textSize="36sp"
         android:textStyle="bold|italic"
         android:visibility="visible"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/description"
@@ -60,10 +61,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="?attr/colorPrimary"
+        android:fadingEdge="horizontal"
         android:fontFamily="@font/amita"
         android:text="Dash !"
         android:textColor="@android:color/background_dark"
+        android:textColorLink="@color/colorPrimaryDark"
         android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.433"
@@ -73,14 +77,16 @@
         android:id="@+id/addFoodFld"
         android:layout_width="193dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="79dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="14dp"
         android:ems="10"
         android:fontFamily="@font/amita"
-        android:hint="Add food"
+        android:hint="Add food..."
         android:inputType="textPersonName"
         android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/decidedFood" />
@@ -112,10 +118,10 @@
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toEndOf="@+id/addFoodFld"
         app:layout_constraintTop_toBottomOf="@+id/decidedFood"
-        app:layout_constraintVertical_bias="0.638"
+        app:layout_constraintVertical_bias="0.558"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </android.support.constraint.ConstraintLayout>
