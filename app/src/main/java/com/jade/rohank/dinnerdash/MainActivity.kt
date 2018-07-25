@@ -18,13 +18,13 @@ class MainActivity : AppCompatActivity() {
         dashButton.setOnClickListener {
             val rand = Random()
             val randFood = rand.nextInt(foodList.size)
-            decidedFood.setText(foodList[randFood])
+            decidedFood.text = foodList[randFood]
         }
 
         floatingAddFood.setOnClickListener {
             val newItem = addFoodFld.text.toString()
             foodList.add(newItem)
-            Toast.makeText(this, "Added item `" + newItem +"` to list!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Added item `$newItem` to list!", Toast.LENGTH_SHORT).show()
             addFoodFld.text.clear()
         }
 

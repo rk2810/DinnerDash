@@ -33,7 +33,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/amita"
-        android:text="Dinner Dash helps you decide what food you should order. Hit the dash button to know your poison for tonight."
+        android:text="Dinner Dash helps you decide what food you should order. Hit the dash button to get random food item and know your poison for tonight."
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="20sp"
