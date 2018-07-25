@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         floatingAddFood.setOnClickListener {
             val newItem = addFoodFld.text.toString()
-            foodList.plus(newItem)
+            foodList.add(newItem)
+            Toast.makeText(this, "Added item `" + newItem +"` to list!", Toast.LENGTH_LONG).show()
             addFoodFld.text.clear()
         }
 
