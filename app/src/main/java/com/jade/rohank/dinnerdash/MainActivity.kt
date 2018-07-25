@@ -7,7 +7,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    var foodList = arrayOf("Om's Dosa", "Rao's Chaap", "Paneer Lababdaar", "Pizza Hut", "Burger King", "McDonald's")
+    var foodList = arrayListOf("Om's Dosa", "Rao's Chaap", "Paneer Lababdaar", "Pizza Hut", "Burger King", "McDonald's")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
             val rand = Random()
             val randFood = rand.nextInt(foodList.size)
             decidedFood.setText(foodList[randFood])
+        }
+
+        floatingAddFood.setOnClickListener {
+            val newItem = addFoodFld.text.toString()
+            foodList.plus(newItem)
+            addFoodFld.text.clear()
         }
 
     }
