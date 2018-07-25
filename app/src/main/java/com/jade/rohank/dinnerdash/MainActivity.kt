@@ -8,6 +8,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
+
     var foodList = arrayListOf("Om's Dosa", "Rao's Chaap", "Paneer Lababdaar", "Pizza Hut", "Burger King", "McDonald's")
 
     override fun onCreate(savedInstanceState: Bundle?) {
