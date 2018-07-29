@@ -22,11 +22,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         floatingAddFood.setOnClickListener {
-            val newItem = addFoodFld.text.toString()
-            foodList.add(newItem)
-            Toast.makeText(this, "Added item `$newItem` to list!", Toast.LENGTH_SHORT).show()
-            addFoodFld.text.clear()
+            val newItem = addFoodFld.text.toString().trim()
+            if (newItem == ""){
+                Toast.makeText(this, "Are you from Q/A team ? \uD83D\uDE3C", Toast.LENGTH_SHORT).show()
+                addFoodFld.text.clear()
+            } else {
+                foodList.add(newItem)
+                Toast.makeText(this, "Added item `$newItem` to list! ", Toast.LENGTH_SHORT).show()
+                addFoodFld.text.clear()
+            }
         }
-
     }
 }
